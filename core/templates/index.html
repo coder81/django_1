@@ -1,1 +1,8 @@
-<p>Vozdra svete!</p>
+<div>
+    {% for name, product in all_products.items %}
+        <p>
+            {{ product.price }} €<br>
+            {{ product.description }}<br>
+        </p>
+    {% endfor %}
+</div>
